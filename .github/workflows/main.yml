@@ -9,7 +9,7 @@ jobs:
       steps:
          -  uses: actions/checkout@v1
 
-         -  uses: actions/ds-action-notify@latest
+         -  uses: actions/ds-action-notify@master
             with:
                MESSAGE: 'Action updated'
                URL: ${{ secrets.NOTIFY_URL }}
