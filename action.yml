@@ -1,0 +1,20 @@
+# action.yml
+name: 'Devesharp Action Notify'
+description: '--'
+inputs:
+  URL: 
+    description: '--'
+    required: true
+  MESSAGE: 
+    description: '--'
+    required: true
+  TOKEN: 
+    description: '--'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.URL }}
+    - ${{ inputs.MESSAGE }}
+    - ${{ inputs.TOKEN }}
