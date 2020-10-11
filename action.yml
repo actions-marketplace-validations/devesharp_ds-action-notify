@@ -1,6 +1,9 @@
 # action.yml
 name: 'Devesharp Action Notify'
 description: '--'
+branding:
+  icon: 'award'  
+  color: 'green'
 inputs:
   URL: 
     description: '--'
